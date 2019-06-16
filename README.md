@@ -1,1 +1,0 @@
-# Gregory-Emmanuel-RA-319132623-Curriculo.io
