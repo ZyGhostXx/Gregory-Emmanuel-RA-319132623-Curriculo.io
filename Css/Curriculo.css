@@ -1,12 +1,25 @@
-h3{
-    margin-top: 60px;
-    margin-bottom: 5px;
-    color: #7B68EE;
+.Cross {
+    display: flex;
+    position: relative;
+    justify-content: center;
 }
 
-.Bio{
-    width: 21cm;
-    height: 30.7cm;
+#GOD{
+    width: 135px;
+    height: 135px;
+    display: flex;
+    position: center;
+    clip-path: circle();
+}
+
+body {
+    display: flex;  
+}
+
+.Bio {
+    display: flex;
+    width: 25cm;
+    height: 31cm;
     margin-left: auto;
     margin-right: auto;
     background-color: #fff;
@@ -14,13 +27,26 @@ h3{
     box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
 }
 
-aside{
-    float: left;
-    width: 38%;
-    height: 100%;
-    background-color: #363636;
+main{
+    display: flex;
+    flex-flow: column wrap;
+    float: right;
+    width: 59%;
+    color: #889;
+    padding-right: 20px;
+
+}
+
+main table td {
+    color: #888899;
+    padding-right: 15px;
+
+}
 
 
+main #experiência, #UNA {
+    margin-top: 15px;
+    font-size: 14px;
 }
 
 aside h1{
@@ -35,17 +61,19 @@ aside ul{
 
 }
 
-aside ul li{
-    list-style: none;
-    color: #fff;
-    padding: 5px;
-    font-size: small;
-
+aside{
+    float: left;
+    width: 38%;
+    height: 100%;
+    background-color: #363636;
 }
 
 aside ul li i{
     color: #E0FFFF;
     margin-right: 5px;
+    display: flex;
+    margin: 4px;
+    display: flex;
 
 }
 
@@ -59,7 +87,13 @@ aside .about h3{
 }
 
 aside .about i{
-    padding-right: 2px;
+    padding-right: 5px;
+}
+
+h3{
+    margin-top: 60px;
+    margin-bottom: 5px;
+    color: #7B68EE;
 }
 
 aside #Sobre{
@@ -68,13 +102,7 @@ aside #Sobre{
     padding-left: 30px;
     text-align: justify;
 }
-main{
-    float: right;
-    width: 59%;
-    color: #889;
-    padding-right: 20px;
 
-}
 
 main section{
     padding-left: 24px;
@@ -92,6 +120,14 @@ main #experiência, #UNA {
     font-size: 14px;
 }
 
+aside ul li{
+    list-style: none;
+    color: #fff;
+    padding: 5px;
+    font-size: small;
+
+}
+
 main #experiência ul li{
     font-size: 13.4px;
 }
@@ -100,10 +136,110 @@ main table{
     padding-top: 20px;
 }
 
+aside h1{
+    text-align: center;
+    margin-bottom: 60px;
+    color: #fff;
+    font-size: 50px;
+}
+
+
+@media all and (min-width: 760px) {
+    .Bio{
+        flex-flow: column wrap;
+        display: flex;
+        width: 25cm;
+        height: 31cm;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: #fff;
+        box-sizing: border-box;
+        box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    }
+    
+aside{
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    float: left;
+    width: 38%;
+    height: 100%;
+    background-color: #363636;
+
+
+}
+
+aside h1{
+    display: flex; 
+    text-align: center;
+    margin-bottom: 60px;
+    color: #fff;
+    font-size: 50px;
+}
+
+aside ul li i{
+    color: #E0FFFF;
+    margin-right: 5px;
+
+}
+
+aside .about{
+    padding-bottom: 40px;
+}
+aside .about h3{
+    color: #E0FFFF;
+    padding-left: 45px;
+
+}
+
+aside .about i{
+    padding-right: 2px;
+}
+
+aside #Sobre{
+    display: flex;
+    color: white;
+    width: 300px;
+    padding-left: 30px;
+    text-align: justify;
+}
+main{
+    display: flex;
+    flex-flow: column wrap;
+    float: right;
+    width: 59%;
+    color: #889;
+    padding-right: 20px;
+
+}
+
+main .complementos{
+    border-bottom: solid 1px #00BFFF;
+}
+
+main i{
+    color: #00BFFF;
+}
+
+main #experiência, #UNA {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+main #experiência ul li{
+    font-size: 13.4px;
+}
+
+main table{
+    display: flex;
+    padding-top: 20px;
+}
+
 main table td {
     color: #888899;
     padding-right: 15px;
 
+}
 }
 
 
